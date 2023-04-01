@@ -9,7 +9,6 @@
 *.ear
 *.nar
 hs_err_pid*
-
 out/
 .idea/
 .idea_modules/

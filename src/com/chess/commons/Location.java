@@ -40,5 +40,4 @@ public class Location {
                 ", rank=" + rank +
                 '}';
     }
-
 }
