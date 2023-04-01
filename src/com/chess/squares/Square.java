@@ -41,4 +41,5 @@ public class Square {
                 ", isOccupied=" + isOccupied +
                 '}';
     }
+
 }
