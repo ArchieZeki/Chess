@@ -1,13 +1,14 @@
 package com.chess.squares;
 
-import chess.common.Location;
+import com.chess.common.Location;
 
 public class Square {
     private final SquareColour squareColour;
     private final Location location;
     private boolean isOccupied;
 
-    public Square(SquareColour squareColour, Location location, boolean isOccupied) {
+
+    public Square(SquareColour squareColour, Location location) {
         this.squareColour = squareColour;
         this.location = location;
         this.isOccupied = false;
@@ -31,5 +32,14 @@ public class Square {
 
     public void setOccupied(boolean occupied) {
         isOccupied = occupied;
+    }
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                "squareColour=" + squareColour +
+                ", location=" + location +
+                ", isOccupied=" + isOccupied +
+                '}';
     }
 }

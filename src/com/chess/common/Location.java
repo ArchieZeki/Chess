@@ -4,11 +4,19 @@ import java.util.Objects;
 
 public class Location {
     private final File file;
-    private final Integer rank;
+    private final int rank;
 
     public Location(File file, Integer rank) {
         this.file = file;
         this.rank = rank;
+    }
+
+    public File getFile() {
+        return file;
+    }
+
+    public Integer getRank() {
+        return rank;
     }
 
     @Override
@@ -24,11 +32,11 @@ public class Location {
         return Objects.hash(file, rank);
     }
 
-    public File getFile() {
-        return file;
-    }
-
-    public Integer getRank() {
-        return rank;
+    @Override
+    public String toString() {
+        return "Location{" +
+                "file=" + file +
+                ", rank=" + rank +
+                '}';
     }
 }
